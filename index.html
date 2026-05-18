@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 11: CI/CD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1 id="form-title">Feedback Form</h1>
+    <form id="feedback-form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" minlength="2" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" minlength="5" required></textarea>
+
+      <button id="submit-btn" type="submit" disabled>Send</button>
+      <p id="status-message" aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
